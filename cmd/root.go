@@ -6,6 +6,7 @@ import (
 	"os"
 	"strings"
 
+	"github.com/pcarion/etsy.catalog/internal/authstore"
 	"github.com/pcarion/etsy.catalog/internal/etsy"
 	"github.com/spf13/cobra"
 )
@@ -21,12 +22,17 @@ func Execute() error { return newRootCmd().Execute() }
 
 func newRootCmd() *cobra.Command {
 	opts = options{apiKey: os.Getenv("ETSY_API_KEY"), token: os.Getenv("ETSY_ACCESS_TOKEN"), shopID: os.Getenv("ETSY_SHOP_ID"), root: "listings", out: os.Stdout, err: os.Stderr}
+	if opts.token == "" {
+		if stored, err := authstore.Load(); err == nil {
+			opts.token = stored.AccessToken
+		}
+	}
 	c := &cobra.Command{Use: "etsy", Short: "Manage Etsy listings as local YAML", SilenceUsage: true, SilenceErrors: true}
 	c.PersistentFlags().StringVar(&opts.shopID, "shop-id", opts.shopID, "Etsy shop ID (or ETSY_SHOP_ID)")
 	c.PersistentFlags().StringVar(&opts.apiKey, "api-key", opts.apiKey, "Etsy keystring:shared_secret (or ETSY_API_KEY)")
 	c.PersistentFlags().StringVar(&opts.token, "access-token", opts.token, "OAuth access token (or ETSY_ACCESS_TOKEN)")
 	c.PersistentFlags().StringVar(&opts.root, "root", opts.root, "catalog directory")
-	c.AddCommand(newAuthCmd(), newListCmd(), newGetCmd(), newPushCmd())
+	c.AddCommand(newAuthCmd(), newShopCmd(), newListCmd(), newGetCmd(), newPushCmd())
 	return c
 }
 

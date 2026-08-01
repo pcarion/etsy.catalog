@@ -14,10 +14,14 @@ The CLI uses these environment variables:
 
 | Variable | Required for | Value |
 | --- | --- | --- |
-| `ETSY_API_KEY` | Every `auth`, `list`, `get`, and `push` command | Etsy app credentials in `keystring:shared_secret` format |
-| `ETSY_ACCESS_TOKEN` | `list`, `get`, and `push` | OAuth access token in `user_id.token` format |
+| `ETSY_API_KEY` | Every `auth`, `shop`, `list`, `get`, and `push` command | Etsy app credentials in `keystring:shared_secret` format |
+| `ETSY_ACCESS_TOKEN` | `shop`, `list`, `get`, and `push` | OAuth access token in `user_id.token` format |
 | `ETSY_SHOP_ID` | `list`, `get`, and `push` | Numeric Etsy shop ID |
 | `ETSY_REFRESH_TOKEN` | `auth refresh` | OAuth refresh token returned by Etsy |
+| `ETSY_AUTH_REDIRECT_URL` | `auth login` and `auth url` | HTTPS callback URL registered for the Etsy app |
+| `ETSY_AUTH_RELAY_URL` | `auth login` | Base URL of the CLI OAuth callback relay |
+| `ETSY_AUTH_CALLBACK_TOKEN` | `auth login` | Bearer token protecting the callback relay API |
+| `ETSY_CREDENTIALS_FILE` | Optional | Override the platform-specific credential file location |
 
 A typical configured shell looks like this:
 
@@ -26,53 +30,62 @@ export ETSY_API_KEY='keystring:shared_secret'
 export ETSY_ACCESS_TOKEN='user_id.access_token'
 export ETSY_REFRESH_TOKEN='user_id.refresh_token'
 export ETSY_SHOP_ID='12345678'
+export ETSY_AUTH_REDIRECT_URL='https://webhooks.example.com/oauth/cli/callback'
+export ETSY_AUTH_RELAY_URL='https://webhooks.example.com'
+export ETSY_AUTH_CALLBACK_TOKEN='secret-relay-bearer-token'
 ```
 
-`ETSY_API_KEY`, `ETSY_ACCESS_TOKEN`, and `ETSY_SHOP_ID` can instead be supplied with the global `--api-key`, `--access-token`, and `--shop-id` flags. `ETSY_REFRESH_TOKEN` can be replaced by the `auth refresh --refresh-token` flag.
+`ETSY_API_KEY`, `ETSY_ACCESS_TOKEN`, and `ETSY_SHOP_ID` can instead be supplied with the global `--api-key`, `--access-token`, and `--shop-id` flags. `ETSY_REFRESH_TOKEN` can be replaced by `auth refresh --refresh-token`, and `ETSY_AUTH_REDIRECT_URL` by `--redirect-uri` on the authorization commands.
 
 The access token needs the `listings_r` scope for `list` and `get`, and `listings_w` for `push`. Do not commit any credentials or tokens.
 
-`ETSY_CODE_VERIFIER` and `ETSY_OAUTH_STATE`, shown later in the authorization flow, are temporary values rather than general CLI configuration. The verifier is passed to `auth exchange --verifier`; the state must be compared with the value returned by Etsy.
+Environment variables take precedence over saved credentials. Successful `auth login` and `auth refresh` commands automatically save access and refresh tokens in the operating system's user configuration directory with file mode `0600`. If old token variables remain exported, unset them so they do not override a newer saved login:
+
+```sh
+unset ETSY_ACCESS_TOKEN ETSY_REFRESH_TOKEN
+```
+
+The default credential location is:
+
+- macOS: `~/Library/Application Support/etsy.catalog/credentials.json`
+- Linux: `~/.config/etsy.catalog/credentials.json` (or `$XDG_CONFIG_HOME/etsy.catalog/credentials.json`)
+- Windows: the user configuration directory under `etsy.catalog/credentials.json`
+
+Set `ETSY_CREDENTIALS_FILE` to override this location. The credential file contains secrets and must never be committed or shared.
+
+After authentication, retrieve the shop associated with the access token:
+
+```sh
+./bin/etsy shop
+```
+
+To configure `ETSY_SHOP_ID` directly in a POSIX-compatible shell:
+
+```sh
+export ETSY_SHOP_ID="$(./bin/etsy shop --id-only)"
+```
 
 ## Etsy authentication
 
-Etsy Open API v3 uses OAuth 2.0 Authorization Code flow with PKCE. Before starting, create an app on Etsy's **Your Apps** page and register an HTTPS redirect URI. Etsy supplies a keystring and shared secret; set both as the API key:
+Etsy Open API v3 uses OAuth 2.0 Authorization Code flow with PKCE. Before starting, create an app on Etsy's **Your Apps** page and register an HTTPS redirect URI. Etsy supplies a keystring and shared secret, which are configured through `ETSY_API_KEY` as shown above.
+
+### Automated login with a callback relay
+
+Register the dedicated CLI callback URL in the Etsy app, then configure the relay. Do not use the callback service's server-managed `/oauth/callback` route:
 
 ```sh
-export ETSY_API_KEY='keystring:shared_secret'
+export ETSY_AUTH_REDIRECT_URL='https://webhooks.rememberwherestudio.net/oauth/cli/callback'
+export ETSY_AUTH_RELAY_URL='https://webhooks.rememberwherestudio.net'
+export ETSY_AUTH_CALLBACK_TOKEN='your-rotated-callback-relay-token'
 ```
 
-Generate a PKCE authorization URL. The redirect URI must exactly match one registered for the app:
+Run:
 
 ```sh
-./bin/etsy auth url --redirect-uri 'https://example.com/etsy/callback'
+./bin/etsy auth login
 ```
 
-The default scopes are `listings_r listings_w`. Override them when necessary:
-
-```sh
-./bin/etsy auth url \
-  --redirect-uri 'https://example.com/etsy/callback' \
-  --scopes 'listings_r listings_w'
-```
-
-Open the printed URL and approve access. Save the printed `ETSY_CODE_VERIFIER` and `ETSY_OAUTH_STATE`. Etsy redirects to the registered URI with `code` and `state` query parameters. Before continuing, verify that the returned `state` exactly equals the printed `ETSY_OAUTH_STATE`; stop if it does not.
-
-Exchange the code using the same redirect URI and the printed verifier:
-
-```sh
-./bin/etsy auth exchange \
-  --code 'code-from-the-callback-url' \
-  --verifier "$ETSY_CODE_VERIFIER" \
-  --redirect-uri 'https://example.com/etsy/callback'
-```
-
-The command prints `ETSY_ACCESS_TOKEN`, `ETSY_REFRESH_TOKEN`, and `EXPIRES_IN`. Store the tokens securely and export them in the current shell. Avoid putting them in source-controlled files or shell history. Access tokens normally expire after one hour; refresh tokens have a longer lifetime.
-
-```sh
-export ETSY_ACCESS_TOKEN='user_id.access_token'
-export ETSY_REFRESH_TOKEN='user_id.refresh_token'
-```
+The CLI registers a one-time state, opens Etsy in the browser, waits for the callback, exchanges the authorization code, consumes the relay session, and saves the returned credentials. The only browser interaction is approving access. Use `--no-open` to print the authorization URL in a headless environment.
 
 When the access token expires, request a new token pair:
 
@@ -80,7 +93,7 @@ When the access token expires, request a new token pair:
 ./bin/etsy auth refresh
 ```
 
-The refresh response can contain a replacement refresh token. Update both environment variables with the newly printed values. The CLI deliberately does not persist tokens to disk or refresh them implicitly, so secret storage remains under the user's control.
+The refresh response can contain a replacement refresh token. The CLI saves both new tokens to its credential file. The lower-level `auth url` command remains available for inspecting or troubleshooting generated Etsy authorization URLs, but the supported authorization workflow is `auth login`.
 
 ## Commands
 
