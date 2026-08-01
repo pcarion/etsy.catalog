@@ -1,0 +1,658 @@
+catalog_id: "4546598563"
+etsy_listing_id: 4546598563
+listing:
+    buyer_price: null
+    created_timestamp: "2026-07-30T03:26:29Z"
+    creation_timestamp: "2026-07-30T03:26:29Z"
+    description: |-
+        Celebrate your New York marathon finish with a personalized 11×17 poster featuring your name, finish time, pace, ranking, and race details.
+
+        Choose between high-resolution digital files to print yourself, or a physical printed poster package.
+
+        After ordering, you’ll receive access to our private customization application. No password, subscription, or credit card is required. Enter your Etsy receipt number, customize your information, and review proof images before approving your design.
+
+        WHAT'S INCLUDED
+
+        Digital Files Only:
+        - Two matching high-resolution digital files: both Light and Dark versions optimized for 11×17 printing
+        - Digital proofs for review before finalizing your files
+        - Access to revise your information until you approve the design
+        - Please note: No physical item will be shipped with this option.
+
+        Map Print + Files:
+        - One personalized 11×17-inch printed poster shipped to your door
+        - Your choice of Bright or Dark design for the physical print
+        - Two matching high-resolution digital files: both Light and Dark versions
+        - Digital proofs for review before printing
+        - Access to revise your information until you approve the design
+
+        HOW PERSONALIZATION WORKS
+
+        1. Purchase the listing and select your preferred format option (Digital Files Only or Map Print + Files).
+        2. Open the customization link provided after purchase.
+        3. Enter your Etsy receipt number.
+        4. Add your name and race results.
+        5. Optionally provide a link to your official results page to help populate the information.
+        6. Review and revise your proof images.
+        7. Select your final layout and approve the design.
+
+        Nothing is printed or finalized until you approve your proof.
+
+        Optional Garmin race-data visualization
+
+        Want to tell the complete story of your race? During customization, you can optionally upload a compatible GPX file exported from Garmin or another fitness platform.
+        Your race data will be transformed into a personalized visualization in the lower-left corner of the poster:
+        - A pace graph showing how your speed changed throughout the race
+        - An elevation profile colored according to your heart-rate data
+
+        Your GPX file must contain the relevant time, elevation, and heart-rate data for every feature to be available. If heart-rate data is missing, the elevation profile can still be displayed without heart-rate coloring. Uploading a GPX file is optional.
+
+        POSTER DETAILS
+
+        - Printed poster size: 11 × 17 inches
+        - Orientation: Portrait
+        - Personalized and made to order
+        - Printed in your selected Light or Dark style
+        - Access to both Light and Dark digital versions included for all buyers
+        - Frame and display accessories are not included
+        - Colors may vary slightly between screens and the printed poster
+
+        Please note
+        Carefully review all names, times, rankings, and other details before approving the design.
+        For physical orders, production begins immediately after approval, so approved personalization cannot subsequently be changed.
+        Because this is a personalized product, returns and exchanges generally cannot be accepted unless it arrives damaged or contains a printing error. Please contact us if there is a problem with your order.
+
+        This is an independently designed commemorative product and is not official merchandise or affiliated with, endorsed by, or sponsored by the race organizer. Event names are used only to identify the customer’s race.
+    ending_timestamp: "2026-11-30T04:26:29Z"
+    featured_rank: -1
+    file_data: null
+    has_variations: true
+    images:
+        - alt_text: null
+          blue: 27
+          brightness: 18
+          created_timestamp: "2026-07-30T16:16:33Z"
+          creation_tsz: "2026-07-30T16:16:33Z"
+          full_height: 1537
+          full_width: 1023
+          green: 37
+          hex_code: 2F251B
+          hue: 30
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8318251650
+          rank: 1
+          red: 47
+          saturation: 42
+          url_75x75: https://i.etsystatic.com/67189331/r/il/d90a23/8318251650/il_75x75.8318251650_6tzx.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/d90a23/8318251650/il_170x135.8318251650_6tzx.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/d90a23/8318251650/il_570xN.8318251650_6tzx.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/d90a23/8318251650/il_fullxfull.8318251650_6tzx.jpg
+        - alt_text: null
+          blue: 27
+          brightness: 18
+          created_timestamp: "2026-07-30T16:16:33Z"
+          creation_tsz: "2026-07-30T16:16:33Z"
+          full_height: 1537
+          full_width: 1023
+          green: 38
+          hex_code: 2F261B
+          hue: 33
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8318258366
+          rank: 2
+          red: 47
+          saturation: 42
+          url_75x75: https://i.etsystatic.com/67189331/r/il/27bc5f/8318258366/il_75x75.8318258366_cmh4.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/27bc5f/8318258366/il_170x135.8318258366_cmh4.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/27bc5f/8318258366/il_570xN.8318258366_cmh4.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/27bc5f/8318258366/il_fullxfull.8318258366_cmh4.jpg
+        - alt_text: null
+          blue: 199
+          brightness: 84
+          created_timestamp: "2026-07-30T16:07:45Z"
+          creation_tsz: "2026-07-30T16:07:45Z"
+          full_height: 1537
+          full_width: 1023
+          green: 209
+          hex_code: D8D1C7
+          hue: 35
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8318202680
+          rank: 3
+          red: 216
+          saturation: 7
+          url_75x75: https://i.etsystatic.com/67189331/r/il/48e2c9/8318202680/il_75x75.8318202680_1lnh.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/48e2c9/8318202680/il_170x135.8318202680_1lnh.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/48e2c9/8318202680/il_570xN.8318202680_1lnh.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/48e2c9/8318202680/il_fullxfull.8318202680_1lnh.jpg
+        - alt_text: null
+          blue: 42
+          brightness: 16
+          created_timestamp: "2026-07-30T16:07:45Z"
+          creation_tsz: "2026-07-30T16:07:45Z"
+          full_height: 1050
+          full_width: 1800
+          green: 36
+          hex_code: 1F242A
+          hue: 212
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8318206986
+          rank: 4
+          red: 31
+          saturation: 26
+          url_75x75: https://i.etsystatic.com/67189331/r/il/b25d81/8318206986/il_75x75.8318206986_dmm6.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/b25d81/8318206986/il_170x135.8318206986_dmm6.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/b25d81/8318206986/il_570xN.8318206986_dmm6.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/b25d81/8318206986/il_fullxfull.8318206986_dmm6.jpg
+        - alt_text: null
+          blue: 20
+          brightness: 25
+          created_timestamp: "2026-07-30T16:07:46Z"
+          creation_tsz: "2026-07-30T16:07:46Z"
+          full_height: 1536
+          full_width: 1024
+          green: 42
+          hex_code: 412A14
+          hue: 29
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8366099615
+          rank: 5
+          red: 65
+          saturation: 69
+          url_75x75: https://i.etsystatic.com/67189331/r/il/10117d/8366099615/il_75x75.8366099615_rxm7.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/10117d/8366099615/il_170x135.8366099615_rxm7.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/10117d/8366099615/il_570xN.8366099615_rxm7.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/10117d/8366099615/il_fullxfull.8366099615_rxm7.jpg
+        - alt_text: null
+          blue: 39
+          brightness: 18
+          created_timestamp: "2026-07-30T16:07:46Z"
+          creation_tsz: "2026-07-30T16:07:46Z"
+          full_height: 1536
+          full_width: 1024
+          green: 41
+          hex_code: 2E2927
+          hue: 17
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8318215006
+          rank: 6
+          red: 46
+          saturation: 15
+          url_75x75: https://i.etsystatic.com/67189331/r/il/357180/8318215006/il_75x75.8318215006_9axz.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/357180/8318215006/il_170x135.8318215006_9axz.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/357180/8318215006/il_570xN.8318215006_9axz.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/357180/8318215006/il_fullxfull.8318215006_9axz.jpg
+        - alt_text: null
+          blue: 197
+          brightness: 83
+          created_timestamp: "2026-07-30T16:07:46Z"
+          creation_tsz: "2026-07-30T16:07:46Z"
+          full_height: 1448
+          full_width: 1086
+          green: 208
+          hex_code: D6D0C5
+          hue: 38
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8366108079
+          rank: 7
+          red: 214
+          saturation: 7
+          url_75x75: https://i.etsystatic.com/67189331/r/il/c796eb/8366108079/il_75x75.8366108079_misi.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/c796eb/8366108079/il_170x135.8366108079_misi.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/c796eb/8366108079/il_570xN.8366108079_misi.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/c796eb/8366108079/il_fullxfull.8366108079_misi.jpg
+        - alt_text: null
+          blue: 38
+          brightness: 22
+          created_timestamp: "2026-07-30T16:07:46Z"
+          creation_tsz: "2026-07-30T16:07:46Z"
+          full_height: 1537
+          full_width: 1023
+          green: 47
+          hex_code: 392F26
+          hue: 28
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8318221516
+          rank: 8
+          red: 57
+          saturation: 33
+          url_75x75: https://i.etsystatic.com/67189331/r/il/64c7d5/8318221516/il_75x75.8318221516_mi3v.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/64c7d5/8318221516/il_170x135.8318221516_mi3v.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/64c7d5/8318221516/il_570xN.8318221516_mi3v.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/64c7d5/8318221516/il_fullxfull.8318221516_mi3v.jpg
+        - alt_text: null
+          blue: 212
+          brightness: 87
+          created_timestamp: "2026-07-30T16:07:46Z"
+          creation_tsz: "2026-07-30T16:07:46Z"
+          full_height: 1050
+          full_width: 1800
+          green: 223
+          hex_code: DFDFD4
+          hue: 60
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8318224740
+          rank: 9
+          red: 223
+          saturation: 4
+          url_75x75: https://i.etsystatic.com/67189331/r/il/60d1bf/8318224740/il_75x75.8318224740_2425.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/60d1bf/8318224740/il_170x135.8318224740_2425.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/60d1bf/8318224740/il_570xN.8318224740_2425.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/60d1bf/8318224740/il_fullxfull.8318224740_2425.jpg
+        - alt_text: null
+          blue: 48
+          brightness: 18
+          created_timestamp: "2026-07-30T16:07:46Z"
+          creation_tsz: "2026-07-30T16:07:46Z"
+          full_height: 1050
+          full_width: 1800
+          green: 35
+          hex_code: 1A2330
+          hue: 215
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8318225998
+          rank: 10
+          red: 26
+          saturation: 45
+          url_75x75: https://i.etsystatic.com/67189331/r/il/b0533c/8318225998/il_75x75.8318225998_2204.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/b0533c/8318225998/il_170x135.8318225998_2204.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/b0533c/8318225998/il_570xN.8318225998_2204.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/b0533c/8318225998/il_fullxfull.8318225998_2204.jpg
+        - alt_text: null
+          blue: 229
+          brightness: 95
+          created_timestamp: "2026-07-30T16:07:46Z"
+          creation_tsz: "2026-07-30T16:07:46Z"
+          full_height: 1050
+          full_width: 1800
+          green: 239
+          hex_code: F4EFE5
+          hue: 40
+          is_black_and_white: false
+          listing_id: 4546598563
+          listing_image_id: 8366116735
+          rank: 11
+          red: 244
+          saturation: 6
+          url_75x75: https://i.etsystatic.com/67189331/r/il/87486a/8366116735/il_75x75.8366116735_53yi.jpg
+          url_170x135: https://i.etsystatic.com/67189331/r/il/87486a/8366116735/il_170x135.8366116735_53yi.jpg
+          url_570xN: https://i.etsystatic.com/67189331/r/il/87486a/8366116735/il_570xN.8366116735_53yi.jpg
+          url_fullxfull: https://i.etsystatic.com/67189331/r/il/87486a/8366116735/il_fullxfull.8366116735_53yi.jpg
+    inventory: null
+    is_customizable: false
+    is_personalizable: true
+    is_private: false
+    is_supply: false
+    is_taxable: true
+    item_dimensions_unit: in
+    item_height: 2
+    item_length: 12
+    item_weight: 6
+    item_weight_unit: oz
+    item_width: 2
+    language: en-US
+    last_modified_timestamp: "2026-07-30T16:21:17Z"
+    listing_id: 4546598563
+    listing_type: physical
+    materials: []
+    non_taxable: false
+    num_favorers: 0
+    original_creation_timestamp: "2026-07-30T03:26:29Z"
+    personalization:
+        personalization_questions:
+            - add_on_price: null
+              instructions: Customization happens after purchase in our web app. Type YES to confirm you will review and approve a proof.
+              max_allowed_characters: 3
+              max_allowed_files: null
+              question_id: 1463097494114
+              question_text: Customization acknowledgment
+              question_type: text_input
+              required: true
+    price:
+        amount: 2500
+        currency_code: USD
+        divisor: 100
+    processing_max: 14
+    processing_min: 7
+    production_partners: []
+    quantity: 25
+    readiness_state_id: 1503204770166
+    return_policy_id: 1504388240259
+    rich_description: null
+    shipping_profile: null
+    shipping_profile_id: 312084195391
+    shop: null
+    shop_id: 67189331
+    shop_section_id: 59624377
+    should_auto_renew: true
+    skus: []
+    state: draft
+    state_timestamp: "2026-07-30T03:26:29Z"
+    style: []
+    suggested_title: null
+    tags:
+        - new york marathon
+        - marathon poster
+        - personalized poster
+        - custom race print
+        - race results poster
+        - marathon finisher
+        - runner gift
+        - nyc runner gift
+        - running wall art
+        - marathon keepsake
+        - finish line gift
+        - custom running art
+        - 11x17 poster
+    taxonomy_id: 2078
+    title: Personalized New York Marathon Poster, Custom Race Results Print, 11x17 Runner Gift
+    translations: null
+    updated_timestamp: "2026-07-30T16:21:17Z"
+    url: https://www.etsy.com/listing/4546598563/personalized-new-york-marathon-poster
+    user: null
+    user_id: 1260746452
+    videos: []
+    views: 0
+    when_made: made_to_order
+    who_made: i_did
+inventory:
+    price_on_property:
+        - 513
+    products:
+        - offerings:
+            - is_enabled: true
+              price: "25"
+              quantity: 25
+              readiness_state_id: 1503204770166
+          property_values:
+            - property_id: 513
+              property_name: Digital Files or Print with Digital Files?
+              scale_id: null
+              scale_name: null
+              value_ids:
+                - 9.5735764654e+10
+              values:
+                - Digital Files Only
+          sku: ""
+        - offerings:
+            - is_enabled: true
+              price: "45"
+              quantity: 25
+              readiness_state_id: 1503204770166
+          property_values:
+            - property_id: 513
+              property_name: Digital Files or Print with Digital Files?
+              scale_id: null
+              scale_name: null
+              value_ids:
+                - 1.504493095535e+12
+              values:
+                - Map Print + Files
+          sku: ""
+    quantity_on_property: []
+    readiness_state_on_property: []
+    sku_on_property: []
+images:
+    - etsy_id: 8318251650
+      rank: 1
+      metadata:
+        alt_text: null
+        blue: 27
+        brightness: 18
+        created_timestamp: "2026-07-30T16:16:33Z"
+        creation_tsz: "2026-07-30T16:16:33Z"
+        full_height: 1537
+        full_width: 1023
+        green: 37
+        hex_code: 2F251B
+        hue: 30
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8318251650
+        rank: 1
+        red: 47
+        saturation: 42
+        url_75x75: https://i.etsystatic.com/67189331/r/il/d90a23/8318251650/il_75x75.8318251650_6tzx.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/d90a23/8318251650/il_170x135.8318251650_6tzx.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/d90a23/8318251650/il_570xN.8318251650_6tzx.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/d90a23/8318251650/il_fullxfull.8318251650_6tzx.jpg
+    - etsy_id: 8318258366
+      rank: 2
+      metadata:
+        alt_text: null
+        blue: 27
+        brightness: 18
+        created_timestamp: "2026-07-30T16:16:33Z"
+        creation_tsz: "2026-07-30T16:16:33Z"
+        full_height: 1537
+        full_width: 1023
+        green: 38
+        hex_code: 2F261B
+        hue: 33
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8318258366
+        rank: 2
+        red: 47
+        saturation: 42
+        url_75x75: https://i.etsystatic.com/67189331/r/il/27bc5f/8318258366/il_75x75.8318258366_cmh4.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/27bc5f/8318258366/il_170x135.8318258366_cmh4.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/27bc5f/8318258366/il_570xN.8318258366_cmh4.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/27bc5f/8318258366/il_fullxfull.8318258366_cmh4.jpg
+    - etsy_id: 8318202680
+      rank: 3
+      metadata:
+        alt_text: null
+        blue: 199
+        brightness: 84
+        created_timestamp: "2026-07-30T16:07:45Z"
+        creation_tsz: "2026-07-30T16:07:45Z"
+        full_height: 1537
+        full_width: 1023
+        green: 209
+        hex_code: D8D1C7
+        hue: 35
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8318202680
+        rank: 3
+        red: 216
+        saturation: 7
+        url_75x75: https://i.etsystatic.com/67189331/r/il/48e2c9/8318202680/il_75x75.8318202680_1lnh.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/48e2c9/8318202680/il_170x135.8318202680_1lnh.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/48e2c9/8318202680/il_570xN.8318202680_1lnh.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/48e2c9/8318202680/il_fullxfull.8318202680_1lnh.jpg
+    - etsy_id: 8318206986
+      rank: 4
+      metadata:
+        alt_text: null
+        blue: 42
+        brightness: 16
+        created_timestamp: "2026-07-30T16:07:45Z"
+        creation_tsz: "2026-07-30T16:07:45Z"
+        full_height: 1050
+        full_width: 1800
+        green: 36
+        hex_code: 1F242A
+        hue: 212
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8318206986
+        rank: 4
+        red: 31
+        saturation: 26
+        url_75x75: https://i.etsystatic.com/67189331/r/il/b25d81/8318206986/il_75x75.8318206986_dmm6.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/b25d81/8318206986/il_170x135.8318206986_dmm6.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/b25d81/8318206986/il_570xN.8318206986_dmm6.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/b25d81/8318206986/il_fullxfull.8318206986_dmm6.jpg
+    - etsy_id: 8366099615
+      rank: 5
+      metadata:
+        alt_text: null
+        blue: 20
+        brightness: 25
+        created_timestamp: "2026-07-30T16:07:46Z"
+        creation_tsz: "2026-07-30T16:07:46Z"
+        full_height: 1536
+        full_width: 1024
+        green: 42
+        hex_code: 412A14
+        hue: 29
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8366099615
+        rank: 5
+        red: 65
+        saturation: 69
+        url_75x75: https://i.etsystatic.com/67189331/r/il/10117d/8366099615/il_75x75.8366099615_rxm7.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/10117d/8366099615/il_170x135.8366099615_rxm7.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/10117d/8366099615/il_570xN.8366099615_rxm7.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/10117d/8366099615/il_fullxfull.8366099615_rxm7.jpg
+    - etsy_id: 8318215006
+      rank: 6
+      metadata:
+        alt_text: null
+        blue: 39
+        brightness: 18
+        created_timestamp: "2026-07-30T16:07:46Z"
+        creation_tsz: "2026-07-30T16:07:46Z"
+        full_height: 1536
+        full_width: 1024
+        green: 41
+        hex_code: 2E2927
+        hue: 17
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8318215006
+        rank: 6
+        red: 46
+        saturation: 15
+        url_75x75: https://i.etsystatic.com/67189331/r/il/357180/8318215006/il_75x75.8318215006_9axz.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/357180/8318215006/il_170x135.8318215006_9axz.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/357180/8318215006/il_570xN.8318215006_9axz.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/357180/8318215006/il_fullxfull.8318215006_9axz.jpg
+    - etsy_id: 8366108079
+      rank: 7
+      metadata:
+        alt_text: null
+        blue: 197
+        brightness: 83
+        created_timestamp: "2026-07-30T16:07:46Z"
+        creation_tsz: "2026-07-30T16:07:46Z"
+        full_height: 1448
+        full_width: 1086
+        green: 208
+        hex_code: D6D0C5
+        hue: 38
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8366108079
+        rank: 7
+        red: 214
+        saturation: 7
+        url_75x75: https://i.etsystatic.com/67189331/r/il/c796eb/8366108079/il_75x75.8366108079_misi.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/c796eb/8366108079/il_170x135.8366108079_misi.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/c796eb/8366108079/il_570xN.8366108079_misi.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/c796eb/8366108079/il_fullxfull.8366108079_misi.jpg
+    - etsy_id: 8318221516
+      rank: 8
+      metadata:
+        alt_text: null
+        blue: 38
+        brightness: 22
+        created_timestamp: "2026-07-30T16:07:46Z"
+        creation_tsz: "2026-07-30T16:07:46Z"
+        full_height: 1537
+        full_width: 1023
+        green: 47
+        hex_code: 392F26
+        hue: 28
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8318221516
+        rank: 8
+        red: 57
+        saturation: 33
+        url_75x75: https://i.etsystatic.com/67189331/r/il/64c7d5/8318221516/il_75x75.8318221516_mi3v.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/64c7d5/8318221516/il_170x135.8318221516_mi3v.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/64c7d5/8318221516/il_570xN.8318221516_mi3v.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/64c7d5/8318221516/il_fullxfull.8318221516_mi3v.jpg
+    - etsy_id: 8318224740
+      rank: 9
+      metadata:
+        alt_text: null
+        blue: 212
+        brightness: 87
+        created_timestamp: "2026-07-30T16:07:46Z"
+        creation_tsz: "2026-07-30T16:07:46Z"
+        full_height: 1050
+        full_width: 1800
+        green: 223
+        hex_code: DFDFD4
+        hue: 60
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8318224740
+        rank: 9
+        red: 223
+        saturation: 4
+        url_75x75: https://i.etsystatic.com/67189331/r/il/60d1bf/8318224740/il_75x75.8318224740_2425.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/60d1bf/8318224740/il_170x135.8318224740_2425.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/60d1bf/8318224740/il_570xN.8318224740_2425.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/60d1bf/8318224740/il_fullxfull.8318224740_2425.jpg
+    - etsy_id: 8318225998
+      rank: 10
+      metadata:
+        alt_text: null
+        blue: 48
+        brightness: 18
+        created_timestamp: "2026-07-30T16:07:46Z"
+        creation_tsz: "2026-07-30T16:07:46Z"
+        full_height: 1050
+        full_width: 1800
+        green: 35
+        hex_code: 1A2330
+        hue: 215
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8318225998
+        rank: 10
+        red: 26
+        saturation: 45
+        url_75x75: https://i.etsystatic.com/67189331/r/il/b0533c/8318225998/il_75x75.8318225998_2204.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/b0533c/8318225998/il_170x135.8318225998_2204.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/b0533c/8318225998/il_570xN.8318225998_2204.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/b0533c/8318225998/il_fullxfull.8318225998_2204.jpg
+    - etsy_id: 8366116735
+      rank: 11
+      metadata:
+        alt_text: null
+        blue: 229
+        brightness: 95
+        created_timestamp: "2026-07-30T16:07:46Z"
+        creation_tsz: "2026-07-30T16:07:46Z"
+        full_height: 1050
+        full_width: 1800
+        green: 239
+        hex_code: F4EFE5
+        hue: 40
+        is_black_and_white: false
+        listing_id: 4546598563
+        listing_image_id: 8366116735
+        rank: 11
+        red: 244
+        saturation: 6
+        url_75x75: https://i.etsystatic.com/67189331/r/il/87486a/8366116735/il_75x75.8366116735_53yi.jpg
+        url_170x135: https://i.etsystatic.com/67189331/r/il/87486a/8366116735/il_170x135.8366116735_53yi.jpg
+        url_570xN: https://i.etsystatic.com/67189331/r/il/87486a/8366116735/il_570xN.8366116735_53yi.jpg
+        url_fullxfull: https://i.etsystatic.com/67189331/r/il/87486a/8366116735/il_fullxfull.8366116735_53yi.jpg

@@ -25,15 +25,19 @@ func newListCmd() *cobra.Command {
 			q.Set("state", state)
 		}
 		var response struct {
-			Results []map[string]any `json:"results"`
-			Count   int              `json:"count"`
+			Results []struct {
+				ListingID int64  `json:"listing_id"`
+				State     string `json:"state"`
+				Title     string `json:"title"`
+			} `json:"results"`
+			Count int `json:"count"`
 		}
 		if err := cl.Do(cmd.Context(), http.MethodGet, fmt.Sprintf("shops/%s/listings", opts.shopID), q, nil, &response); err != nil {
 			return err
 		}
 		fmt.Fprintln(opts.out, "ID\tSTATE\tTITLE")
 		for _, l := range response.Results {
-			fmt.Fprintf(opts.out, "%v\t%v\t%v\n", l["listing_id"], l["state"], l["title"])
+			fmt.Fprintf(opts.out, "%d\t%s\t%s\n", l.ListingID, l.State, l.Title)
 		}
 		return nil
 	}}

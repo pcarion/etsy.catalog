@@ -24,14 +24,16 @@ func newGetCmd() *cobra.Command {
 			return fmt.Errorf("catalog-id must be an Etsy numeric listing ID")
 		}
 		var listing map[string]any
-		q := url.Values{"includes": {"Images,Inventory,Videos"}}
+		q := url.Values{"includes": {"images,videos,personalization"}}
 		if err := cl.Do(cmd.Context(), http.MethodGet, fmt.Sprintf("listings/%d", id), q, nil, &listing); err != nil {
 			return err
 		}
 		d := &catalog.Document{CatalogID: args[0], EtsyID: id, Listing: listing}
-		if inv, ok := listing["inventory"].(map[string]any); ok {
-			d.Inventory = writableInventory(inv)
+		var inventory map[string]any
+		if err := cl.Do(cmd.Context(), http.MethodGet, fmt.Sprintf("listings/%d/inventory", id), nil, nil, &inventory); err != nil {
+			return fmt.Errorf("get listing inventory: %w", err)
 		}
+		d.Inventory = writableInventory(inventory)
 		if images, ok := listing["images"].([]any); ok {
 			for _, raw := range images {
 				if m, ok := raw.(map[string]any); ok {
